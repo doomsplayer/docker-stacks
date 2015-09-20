@@ -1,5 +1,5 @@
 # Copyright (c) Jupyter Development Team.
-FROM jupyter/minimal-notebook
+FROM torz/minimal-notebook
 
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 
