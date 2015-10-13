@@ -3,6 +3,8 @@ FROM torz/minimal-notebook
 
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 
+COPY notebook.conf /etc/supervisor/conf.d/
+
 USER jovyan
 
 # Install Python 3 packages
