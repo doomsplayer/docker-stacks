@@ -22,6 +22,7 @@ RUN conda install --yes \
     'dill' \
     'numba' \
     'bokeh' \
+    'elasticsearch' \
     && conda clean -yt
 
 USER root
