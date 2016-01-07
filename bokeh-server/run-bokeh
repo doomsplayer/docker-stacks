@@ -1,0 +1,1 @@
+bokeh serve --address=0.0.0.0 --port=8888 `echo $BOKEHHOST | sed -r ":a; s/,(.*?)$/ --host \1/; ta; s/^(.*?) ?/--host \1 /"`
