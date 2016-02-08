@@ -4,7 +4,6 @@ FROM torz/minimal-notebook
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 
 COPY notebook.conf /etc/supervisor/conf.d/
-COPY run-bokeh /usr/bin/
 
 USER jovyan
 
