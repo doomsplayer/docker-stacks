@@ -4,6 +4,7 @@ FROM torz/minimal-notebook
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 
 COPY notebook.conf /etc/supervisor/conf.d/
+COPY bootstrap.py /
 
 USER jovyan
 
