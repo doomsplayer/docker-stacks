@@ -1,10 +1,11 @@
 from bokeh.plotting import Figure
 from bokeh.core.properties import Dict, String, List, Tuple, Instance
+from bokeh.models.plots import Plot
 
 class EnhancedFigure():
     variables = Dict(String, String)
     category = List(String)
-    plot = Instance(Figure)
+    plot = Instance(Plot)
 
     def __getattr__(self, attrib):
         return getattr(self.plot, attrib)
