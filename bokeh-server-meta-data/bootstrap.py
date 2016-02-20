@@ -3,10 +3,6 @@ from bokeh.core.properties import Dict, String, List, Tuple, Instance
 from bokeh.models.plots import Plot
 from bokeh.core.properties import HasProps
 
-class EnhancedFigure:
+class EnhancedFigure(Figure):
     variables = Dict(String, String)
     category = List(String)
-    plot = Instance(Plot)
-
-    def __getattr__(self, attrib):
-        return getattr(self.plot, attrib)
