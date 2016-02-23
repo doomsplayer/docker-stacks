@@ -4,8 +4,8 @@ FROM torz/minimal-notebook
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 
 COPY notebook.conf /etc/supervisor/conf.d/
-COPY bootstrap.py /
 
+COPY bootstrap.py /bootstrap.py
 USER jovyan
 
 # Install Python 3 packages
