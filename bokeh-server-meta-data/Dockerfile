@@ -17,5 +17,7 @@ RUN conda install --yes \
     'redis-py'\
     && conda clean -yt
 
+RUN pip install bokeh-metaplot==0.3
+
 USER root
 
